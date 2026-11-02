@@ -244,6 +244,10 @@ export const Footer = ({ onSelectCollection, onScrollTo }) => {
                   <span className="text-[#38bdf8] group-hover:translate-x-0.5 transition-transform">›</span>
                   <span>+91 77439 49512</span>
                 </a>
+                <a href="tel:+919970801452" className="hover:text-[#38bdf8] transition-colors flex items-center gap-1 group">
+                  <span className="text-[#38bdf8] group-hover:translate-x-0.5 transition-transform">›</span>
+                  <span>+91 99708 01452</span>
+                </a>
               </div>
             </div>
 
