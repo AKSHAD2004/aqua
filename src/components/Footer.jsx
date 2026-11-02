@@ -39,23 +39,6 @@ export const Footer = ({ onSelectCollection, onScrollTo }) => {
               Bottle water, pure quality that you can trust. Pure. Safe. Healthy Everyday. Engineered with automated touchless packaging and multi-stage alpine reverse osmosis.
             </p>
 
-            <div className="flex flex-col gap-1.5 pt-1">
-              <span className="font-label-caps text-[10.5px] sm:text-[11px] text-[#38bdf8] font-bold tracking-widest uppercase">
-                QUALITY ASSURANCE
-              </span>
-              <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-0.5">
-                <span className="px-2.5 py-1 bg-white/10 rounded-lg text-[10.5px] sm:text-[11px] font-semibold text-white border border-white/20 backdrop-blur-sm">
-                  FSSAI LIC. 100200210058
-                </span>
-                <span className="px-2.5 py-1 bg-white/10 rounded-lg text-[10.5px] sm:text-[11px] font-semibold text-white border border-white/20 backdrop-blur-sm">
-                  BIS IS:14543
-                </span>
-                <span className="px-2.5 py-1 bg-white/10 rounded-lg text-[10.5px] sm:text-[11px] font-semibold text-white border border-white/20 backdrop-blur-sm">
-                  ISO 22000:2018
-                </span>
-              </div>
-            </div>
-
             {/* Follow our journey Social Buttons */}
             <div className="pt-2 sm:pt-3 flex flex-col gap-2.5 sm:gap-3">
               <span className="text-[17px] sm:text-[19px] font-semibold text-white tracking-tight font-outfit">
