@@ -89,11 +89,12 @@ export const CollectionsShowcase = ({ onRequestCaseOrder, onOpenSpecSheet }) => 
               <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full bg-secondary-fixed/40 absolute blur-3xl pointer-events-none"></div>
 
               {/* Dynamic Image Container */}
-              <div className="relative z-10 flex items-center justify-center p-2 sm:p-4">
+              <div className="relative z-10 flex items-center justify-center p-2 sm:p-4 w-full">
                 <img
+                  key={activeCategory.id}
                   alt={`${activeCategory.title} - ${activeSize.title}`}
-                  className="max-h-[200px] sm:max-h-[260px] md:max-h-[320px] w-auto object-contain rounded-xl sm:rounded-2xl drop-shadow-xl transition-all duration-500 hover:scale-105"
-                  src={IMAGES.bottlingFacility}
+                  className="max-h-[220px] sm:max-h-[280px] md:max-h-[340px] w-auto max-w-full object-contain rounded-2xl shadow-xl transition-all duration-500 hover:scale-[1.03] bg-white/40 backdrop-blur-sm border border-white/60 p-1"
+                  src={activeCategory.image || IMAGES.bottlingFacility}
                 />
               </div>
 

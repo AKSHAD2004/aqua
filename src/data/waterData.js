@@ -12,6 +12,7 @@ export const COLLECTION_CATEGORIES = {
     name: "Regular Packaging",
     subtitle: "250ml Pocket, 500ml Everyday, 1 Litre Table",
     title: "Diamond AquaPure Retail Line",
+    image: "/products/regular-packaging.jpg",
     description: "The gold standard of pure daily hydration. Engineered with diamond clarity, tamper-proof security caps, and balanced electrolytes. Suitable for homes, transit, and retail shelves.",
     sizes: [
       { id: "250", label: "250 ml", title: "250 ml Pocket Pack", caseCount: "48 Units / Master Box", desc: "Ultra-compact on-the-go hydration for single-use occasions, commuter bags, and school lunches." },
@@ -31,6 +32,7 @@ export const COLLECTION_CATEGORIES = {
     name: "Corporate & Executive",
     subtitle: "Customized corporate meeting & office desk packs",
     title: "Executive Desk & Boardroom Edition",
+    image: "/products/corporate-executive.png",
     description: "Sleek, minimalist design tailored for high-profile executive lounges, client boardrooms, and luxury conference tables. Premium clean labeling with crystal light reflection.",
     sizes: [
       { id: "500", label: "500 ml", title: "500 ml Executive Matte Pack", caseCount: "24 Units / Box", desc: "Refined ergonomic matte profile designed to complement modern corporate boardrooms." },
@@ -49,6 +51,7 @@ export const COLLECTION_CATEGORIES = {
     name: "Hospitality & Events",
     subtitle: "Compact 250ml mini packs for banquet and transit",
     title: "Hospitality & Mini Banquet Pack",
+    image: "/products/hospitality-events.jpg",
     description: "Convenient 250ml mini portions designed to eliminate half-drunk bottle wastage in wedding receptions, luxury airlines, luxury coaches, fine dining, and hotel guest suites.",
     sizes: [
       { id: "250", label: "250 ml", title: "250 ml Banquet Mini Pack", caseCount: "48 Units / Master Box", desc: "Eliminates leftover water waste while providing an exquisite table setting for upscale banquets." }
@@ -66,6 +69,7 @@ export const COLLECTION_CATEGORIES = {
     name: "Institutional Jars",
     subtitle: "High-capacity 20 Litre multi-use safe dispenser jars",
     title: "Institutional Dispenser Jars (20L)",
+    image: "/products/institutional-jars.jpg",
     description: "Multi-layered food-grade heavy-duty 20-litre jars for corporate water coolers, hospital wards, educational institutions, and residential towers. Cleaned with automated 14-step internal ozonated jet wash.",
     sizes: [
       { id: "20000", label: "20 Litre", title: "20 Litre Heavy-Duty Smart Jar", caseCount: "Direct Bulk Delivery Pallets", desc: "Engineered with anti-microbial spill-proof neck valves for sanitized office dispenser systems." }
