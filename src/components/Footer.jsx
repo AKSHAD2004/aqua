@@ -195,11 +195,11 @@ export const Footer = ({ onSelectCollection, onScrollTo }) => {
                 <span>Modern Bottling Plant</span>
               </li>
               <li 
-                onClick={() => handleNav('certifications')} 
+                onClick={() => handleNav('facility')} 
                 className="hover:text-white hover:translate-x-1 transition-all cursor-pointer flex items-center gap-1.5 group"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] opacity-0 group-hover:opacity-100 transition-opacity" />
-                <span>Quality Standards &amp; Lab Tests</span>
+                <span>Zero-Touch Hygiene Standards</span>
               </li>
               <li 
                 onClick={() => handleNav('facility')} 

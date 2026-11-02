@@ -6,7 +6,6 @@ import { Hero } from './components/Hero';
 import { BrandPhilosophy } from './components/BrandPhilosophy';
 import { CollectionsShowcase } from './components/CollectionsShowcase';
 import { BottlingFacility } from './components/BottlingFacility';
-import { Certifications } from './components/Certifications';
 import { InquirySection } from './components/InquirySection';
 import { Footer } from './components/Footer';
 import { VirtualTourModal } from './components/VirtualTourModal';
@@ -136,8 +135,6 @@ export function App() {
         <BottlingFacility
           onOpenVirtualTour={() => setVirtualTourOpen(true)}
         />
-
-        <Certifications />
 
         <InquirySection
           prefillOrder={prefillOrder}
