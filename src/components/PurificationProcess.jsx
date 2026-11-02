@@ -25,17 +25,18 @@ export const PurificationProcess = () => {
         </div>
 
         {/* 8-Stage Process Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 reveal">
-          {PURIFICATION_STAGES.map((stage) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          {PURIFICATION_STAGES.map((stage, idx) => (
             <div
               key={stage.step}
-              className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-white/90 backdrop-blur-xl shadow-sm border border-white/80 flex flex-col gap-2.5 sm:gap-3 relative overflow-hidden"
+              style={{ transitionDelay: `${(idx % 4) * 75}ms` }}
+              className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-white/90 backdrop-blur-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-white/80 flex flex-col gap-2.5 sm:gap-3 relative overflow-hidden reveal-card group hover:-translate-y-1"
             >
               <div className="flex items-center justify-between z-10">
-                <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl ${stage.badgeBg} flex items-center justify-center ${stage.badgeText} font-bold text-[16px] sm:text-headline-sm shadow-sm`}>
+                <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl ${stage.badgeBg} flex items-center justify-center ${stage.badgeText} font-bold text-[16px] sm:text-headline-sm shadow-sm transition-transform duration-300 group-hover:scale-105`}>
                   {stage.step}
                 </div>
-                <span className="material-symbols-outlined text-[20px] sm:text-[24px] text-secondary opacity-75">
+                <span className="material-symbols-outlined text-[20px] sm:text-[24px] text-secondary opacity-75 transition-transform duration-300 group-hover:scale-110">
                   {stage.icon}
                 </span>
               </div>

@@ -43,7 +43,8 @@ export function App() {
     }
     rafId = requestAnimationFrame(raf);
 
-    // Scroll reveal observer - Trigger animation ONLY ONE TIME
+    // 60fps / 120fps Buttery Smooth Scroll Engine & Observer
+    let timerId;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -54,16 +55,30 @@ export function App() {
         });
       },
       {
-        threshold: 0.1,
-        rootMargin: '0px 0px -40px 0px',
+        threshold: 0.05,
+        rootMargin: '0px 0px -20px 0px',
       }
     );
 
-    const elements = document.querySelectorAll('.reveal, .reveal-scale, .reveal-fade');
+    const elements = document.querySelectorAll('.reveal, .reveal-scale, .reveal-fade, .reveal-card');
     elements.forEach((el) => observer.observe(el));
+
+    // Instant mobile check: Reveal any elements already in or near viewport
+    const checkInitialVisibility = () => {
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 50 && rect.bottom > -50) {
+          el.classList.add('is-visible');
+          observer.unobserve(el);
+        }
+      });
+    };
+    checkInitialVisibility();
+    timerId = setTimeout(checkInitialVisibility, 200);
 
     return () => {
       cancelAnimationFrame(rafId);
+      clearTimeout(timerId);
       lenis.destroy();
       window.__lenis = null;
       observer.disconnect();
