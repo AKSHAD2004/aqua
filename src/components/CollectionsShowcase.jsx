@@ -33,10 +33,10 @@ export const CollectionsShowcase = ({ onRequestCaseOrder, onOpenSpecSheet }) => 
         
         {/* Section Title */}
         <div className="mb-8 sm:mb-12 reveal">
-          <span className="font-label-caps text-[11px] sm:text-[12px] text-secondary font-bold tracking-widest uppercase block mb-2">
+          <span className="font-label-caps text-[11px] sm:text-[12px] text-[#0284c7] font-bold tracking-[0.18em] uppercase block mb-2">
             Our Collections
           </span>
-          <h2 className="text-[26px] sm:text-[34px] lg:text-headline-lg font-bold text-primary font-outfit">
+          <h2 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold tracking-tight text-gradient-luxury leading-tight font-outfit">
             Ergonomic Bottles Designed For Every Moment
           </h2>
         </div>
@@ -53,26 +53,26 @@ export const CollectionsShowcase = ({ onRequestCaseOrder, onOpenSpecSheet }) => 
                 <button
                   key={key}
                   onClick={() => handleCategoryChange(key)}
-                  className={`text-left p-3.5 sm:p-5 rounded-xl sm:rounded-2xl transition-all duration-200 flex items-center justify-between group cursor-pointer border ${
+                  className={`text-left p-3.5 sm:p-5 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-between group cursor-pointer border ${
                     isSelected
-                      ? 'bg-white/95 shadow-md border-secondary/50 ring-2 ring-secondary/20'
-                      : 'bg-white/75 hover:bg-white/90 backdrop-blur-md border-white/60 text-on-surface-variant'
+                      ? 'bg-white shadow-[0_8px_30px_rgba(0,75,147,0.12)] border-[#0284c7]/50 ring-2 ring-[#0284c7]/20 scale-[1.01]'
+                      : 'bg-white/75 hover:bg-white/95 backdrop-blur-md border-white/70 text-slate-600 hover:shadow-md'
                   }`}
                 >
                   <div className="pr-2 sm:pr-4">
-                    <span className={`text-[16px] sm:text-headline-sm font-bold block font-outfit ${
-                      isSelected ? 'text-primary' : 'text-on-surface group-hover:text-primary transition-colors'
+                    <span className={`text-[16px] sm:text-[18px] font-bold block font-outfit ${
+                      isSelected ? 'text-[#031b4e]' : 'text-slate-900 group-hover:text-[#0056b3] transition-colors'
                     }`}>
                       {cat.name}
                     </span>
-                    <span className="text-[12px] sm:text-body-sm text-on-surface-variant mt-0.5 block">
+                    <span className="text-[12px] sm:text-body-sm text-slate-500 mt-0.5 block font-normal">
                       {cat.subtitle}
                     </span>
                   </div>
                   <span className={`material-symbols-outlined text-[20px] transition-transform duration-200 ${
                     isSelected
-                      ? 'text-primary translate-x-1 font-bold'
-                      : 'text-outline-variant group-hover:text-primary group-hover:translate-x-1'
+                      ? 'text-[#0284c7] translate-x-1 font-bold'
+                      : 'text-slate-400 group-hover:text-[#0284c7] group-hover:translate-x-1'
                   }`}>
                     arrow_forward
                   </span>
@@ -123,12 +123,12 @@ export const CollectionsShowcase = ({ onRequestCaseOrder, onOpenSpecSheet }) => 
             {/* Product Details Column */}
             <div className="w-full md:w-1/2 flex flex-col justify-between h-full gap-4 sm:gap-6">
               <div>
-                <div className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-secondary-container/30 text-secondary-container text-[10.5px] sm:text-label-caps font-bold uppercase mb-2">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0284c7]/10 text-[#0284c7] text-[11px] font-bold uppercase tracking-wider mb-2 border border-[#0284c7]/20 font-outfit">
                   <span className="material-symbols-outlined text-[13px] sm:text-[14px]">diamond</span>
                   <span>Active Selection: {activeSize.label}</span>
                 </div>
 
-                <h3 className="text-[20px] sm:text-headline-md font-bold text-primary font-outfit">
+                <h3 className="text-[22px] sm:text-[28px] font-bold text-gradient-luxury font-outfit tracking-tight">
                   {activeSize.title}
                 </h3>
 

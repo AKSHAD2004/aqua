@@ -69,7 +69,7 @@ export const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollTo(item.id)}
-                className="px-3.5 py-1.5 rounded-full text-black hover:text-[#0056b3] hover:bg-slate-100 active:bg-slate-200 text-[13.5px] md:text-[14px] font-semibold tracking-wide transition-all font-outfit cursor-pointer flex items-center gap-1 group"
+                className="px-3.5 py-1.5 rounded-full text-slate-800 hover:text-[#0056b3] hover:bg-sky-50/80 active:bg-sky-100 text-[13.5px] md:text-[14px] font-semibold tracking-wide transition-all font-outfit cursor-pointer flex items-center gap-1 group"
               >
                 <span>
                   {item.label}
@@ -77,6 +77,17 @@ export const Header = () => {
               </button>
             ))}
           </nav>
+
+          {/* Desktop Right CTA Pill */}
+          <div className="hidden lg:flex items-center">
+            <button
+              onClick={() => scrollTo('inquiry')}
+              className="px-4 py-2 rounded-full bg-gradient-to-r from-[#003f87] to-[#00677f] hover:from-[#002f67] hover:to-[#00576f] text-white text-[13px] font-bold tracking-wider uppercase font-outfit transition-all shadow-[0_4px_14px_rgba(0,63,135,0.25)] hover:shadow-[0_6px_20px_rgba(0,63,135,0.35)] cursor-pointer flex items-center gap-1.5 transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <span className="material-symbols-outlined text-[16px] text-[#38bdf8]">shopping_bag</span>
+              <span>Order Supply</span>
+            </button>
+          </div>
 
           {/* Mobile Menu Toggle Button */}
           <div className="lg:hidden flex items-center">

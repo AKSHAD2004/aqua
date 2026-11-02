@@ -8,13 +8,13 @@ export const BottlingFacility = ({ onOpenVirtualTour }) => {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 reveal">
-          <span className="font-label-caps text-[11px] sm:text-[12px] text-secondary font-bold tracking-widest uppercase block mb-2">
+          <span className="font-label-caps text-[11px] sm:text-[12px] text-[#0284c7] font-bold tracking-[0.18em] uppercase block mb-2">
             Our Modern Bottling Plant
           </span>
-          <h2 className="text-[26px] sm:text-[34px] lg:text-headline-lg font-bold text-primary font-outfit">
+          <h2 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold tracking-tight text-gradient-luxury leading-tight font-outfit">
             Purity Crafted In A World-Class Facility
           </h2>
-          <p className="text-[14px] sm:text-body-lg text-on-surface-variant mt-2 sm:mt-3 leading-relaxed">
+          <p className="text-[14.5px] sm:text-[16.5px] text-slate-700 mt-2 sm:mt-3 leading-relaxed font-normal">
             Aquasource Beverages operates an advanced manufacturing unit engineered for sterile integrity, automated blow-moulding, precision RO filtration, and strict zero-touch hygiene protocols.
           </p>
         </div>

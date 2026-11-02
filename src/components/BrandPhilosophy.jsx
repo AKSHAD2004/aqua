@@ -9,15 +9,15 @@ export const BrandPhilosophy = ({ onExploreFacility }) => {
         {/* Section Tag & Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 mb-10 sm:mb-14 items-start reveal">
           <div className="lg:col-span-5">
-            <span className="font-label-caps text-[11px] sm:text-[12px] text-secondary font-bold tracking-widest uppercase block mb-2 sm:mb-3">
+            <span className="font-label-caps text-[11px] sm:text-[12px] text-[#0284c7] font-bold tracking-[0.18em] uppercase block mb-2 sm:mb-3">
               Bottled Water At Its Most Pure. No Compromises.
             </span>
-            <h2 className="text-[26px] sm:text-[34px] lg:text-headline-lg font-bold tracking-tight text-primary leading-tight font-outfit">
+            <h2 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold tracking-tight text-gradient-luxury leading-[1.15] font-outfit">
               The Diamond Standard <br className="hidden sm:inline" />of Natural Hydration.
             </h2>
           </div>
           <div className="lg:col-span-7 flex flex-col gap-3 sm:gap-4">
-            <p className="text-[14px] sm:text-[16px] lg:text-body-lg text-on-surface-variant leading-relaxed">
+            <p className="text-[14.5px] sm:text-[16.5px] lg:text-[17.5px] text-slate-700 leading-relaxed font-normal">
               Aquasource Beverages crafts Diamond AquaPure with an uncompromising philosophy: water must remain as clear and energizing as its origin. We eliminate impurities while safeguarding revitalizing electrolytes, producing table-ready clarity that uplifts wellness, hospitality, and daily performance.
             </p>
             <div className="flex items-center gap-6 pt-1 sm:pt-2">
