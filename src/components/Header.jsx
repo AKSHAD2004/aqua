@@ -78,17 +78,6 @@ export const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop Right CTA Pill */}
-          <div className="hidden lg:flex items-center">
-            <button
-              onClick={() => scrollTo('inquiry')}
-              className="px-4 py-2 rounded-full bg-gradient-to-r from-[#003f87] to-[#00677f] hover:from-[#002f67] hover:to-[#00576f] text-white text-[13px] font-bold tracking-wider uppercase font-outfit transition-all shadow-[0_4px_14px_rgba(0,63,135,0.25)] hover:shadow-[0_6px_20px_rgba(0,63,135,0.35)] cursor-pointer flex items-center gap-1.5 transform hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <span className="material-symbols-outlined text-[16px] text-[#38bdf8]">shopping_bag</span>
-              <span>Order Supply</span>
-            </button>
-          </div>
-
           {/* Mobile Menu Toggle Button */}
           <div className="lg:hidden flex items-center">
             <button

@@ -26,17 +26,6 @@ export const BottlingFacility = ({ onOpenVirtualTour }) => {
             className="w-full h-auto object-cover max-h-[360px] sm:max-h-[500px] lg:max-h-[640px] transition-transform duration-700 group-hover:scale-[1.02]"
             src={IMAGES.bottlingFacility}
           />
-
-          {/* Interactive Play Button for Virtual Tour */}
-          <div className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20">
-            <button
-              onClick={onOpenVirtualTour}
-              className="inline-flex items-center gap-1.5 sm:gap-2 bg-primary/90 hover:bg-primary text-on-primary px-3 py-1.5 sm:px-4 sm:py-2.5 rounded-full backdrop-blur-md shadow-lg transition-all transform hover:scale-105 cursor-pointer text-[12px] sm:text-body-sm font-bold"
-            >
-              <span className="material-symbols-outlined text-[17px] sm:text-[20px] text-secondary-fixed">videocam</span>
-              <span>Watch 360° Tour</span>
-            </button>
-          </div>
         </div>
 
         {/* Feature Cards Placed Below the Image (No Overlap) */}
