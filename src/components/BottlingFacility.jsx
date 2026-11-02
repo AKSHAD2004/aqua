@@ -19,8 +19,8 @@ export const BottlingFacility = ({ onOpenVirtualTour }) => {
           </p>
         </div>
 
-        {/* Facility Image Showcase */}
-        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl bg-surface-container-low mb-8 sm:mb-12 border border-outline-variant/30 group reveal">
+        {/* Facility Image Showcase (Uncovered, Full Visibility) */}
+        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl bg-surface-container-low border border-outline-variant/30 group reveal">
           <img
             alt="Aquasource Beverages modern bottling facility architecture, stainless steel tanks, and Diamond AquaPure product line"
             className="w-full h-auto object-cover max-h-[360px] sm:max-h-[500px] lg:max-h-[640px] transition-transform duration-700 group-hover:scale-[1.02]"
@@ -37,54 +37,54 @@ export const BottlingFacility = ({ onOpenVirtualTour }) => {
               <span>Watch 360° Tour</span>
             </button>
           </div>
+        </div>
 
-          {/* Interactive Overlay Callout Banner */}
-          <div className="lg:absolute lg:bottom-6 lg:left-6 lg:right-6 bg-white/95 backdrop-blur-2xl p-5 sm:p-6 lg:p-8 rounded-2xl shadow-xl border border-white/80">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-              
-              <div className="flex items-start gap-3 sm:gap-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-secondary-fixed/50 flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
-                  <span className="material-symbols-outlined text-[20px] sm:text-[24px]">factory</span>
-                </div>
-                <div>
-                  <h4 className="text-[14px] sm:text-label-md font-bold text-primary font-outfit">
-                    Cleanroom Air Filtration
-                  </h4>
-                  <p className="text-[12.5px] sm:text-body-sm text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">
-                    Class 10,000 positive air pressure preventing microscopic airborne contaminants during filling.
-                  </p>
-                </div>
+        {/* Feature Cards Placed Below the Image (No Overlap) */}
+        <div className="mt-6 sm:mt-8 bg-white/95 backdrop-blur-2xl p-5 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl shadow-xl border border-white/80 reveal-card">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            
+            <div className="flex items-start gap-3 sm:gap-4 p-2 sm:p-3 rounded-xl hover:bg-white/60 transition-colors">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-secondary-fixed/50 flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+                <span className="material-symbols-outlined text-[20px] sm:text-[24px]">factory</span>
               </div>
-
-              <div className="flex items-start gap-3 sm:gap-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-secondary-fixed/50 flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
-                  <span className="material-symbols-outlined text-[20px] sm:text-[24px]">precision_manufacturing</span>
-                </div>
-                <div>
-                  <h4 className="text-[14px] sm:text-label-md font-bold text-primary font-outfit">
-                    Zero-Touch Automation
-                  </h4>
-                  <p className="text-[12.5px] sm:text-body-sm text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">
-                    Fully synchronized rinsing, filling, and capping carousel operating without human contact.
-                  </p>
-                </div>
+              <div>
+                <h4 className="text-[14px] sm:text-label-md font-bold text-primary font-outfit">
+                  Cleanroom Air Filtration
+                </h4>
+                <p className="text-[12.5px] sm:text-body-sm text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">
+                  Class 10,000 positive air pressure preventing microscopic airborne contaminants during filling.
+                </p>
               </div>
-
-              <div className="flex items-start gap-3 sm:gap-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-secondary-fixed/50 flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
-                  <span className="material-symbols-outlined text-[20px] sm:text-[24px]">biotech</span>
-                </div>
-                <div>
-                  <h4 className="text-[14px] sm:text-label-md font-bold text-primary font-outfit">
-                    In-House Quality Lab
-                  </h4>
-                  <p className="text-[12.5px] sm:text-body-sm text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">
-                    Hourly analytical assessments for microbial counts, pH balance, and total dissolved solids.
-                  </p>
-                </div>
-              </div>
-
             </div>
+
+            <div className="flex items-start gap-3 sm:gap-4 p-2 sm:p-3 rounded-xl hover:bg-white/60 transition-colors">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-secondary-fixed/50 flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+                <span className="material-symbols-outlined text-[20px] sm:text-[24px]">precision_manufacturing</span>
+              </div>
+              <div>
+                <h4 className="text-[14px] sm:text-label-md font-bold text-primary font-outfit">
+                  Zero-Touch Automation
+                </h4>
+                <p className="text-[12.5px] sm:text-body-sm text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">
+                  Fully synchronized rinsing, filling, and capping carousel operating without human contact.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3 sm:gap-4 p-2 sm:p-3 rounded-xl hover:bg-white/60 transition-colors">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-secondary-fixed/50 flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+                <span className="material-symbols-outlined text-[20px] sm:text-[24px]">biotech</span>
+              </div>
+              <div>
+                <h4 className="text-[14px] sm:text-label-md font-bold text-primary font-outfit">
+                  In-House Quality Lab
+                </h4>
+                <p className="text-[12.5px] sm:text-body-sm text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">
+                  Hourly analytical assessments for microbial counts, pH balance, and total dissolved solids.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
 
