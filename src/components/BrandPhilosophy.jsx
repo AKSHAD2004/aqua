@@ -1,7 +1,7 @@
 import React from 'react';
 import { IMAGES } from '../data/waterData';
 
-export const BrandPhilosophy = ({ onLearnPurificationClick }) => {
+export const BrandPhilosophy = ({ onExploreFacility }) => {
   return (
     <section id="about-us" className="w-full py-12 sm:py-16 lg:py-24 bg-white/40 backdrop-blur-sm relative border-b border-white/40">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
@@ -22,12 +22,12 @@ export const BrandPhilosophy = ({ onLearnPurificationClick }) => {
             </p>
             <div className="flex items-center gap-6 pt-1 sm:pt-2">
               <button
-                onClick={onLearnPurificationClick || (() => {
-                  document.getElementById('purification')?.scrollIntoView({ behavior: 'smooth' });
+                onClick={onExploreFacility || (() => {
+                  document.getElementById('where-to-find-us')?.scrollIntoView({ behavior: 'smooth' });
                 })}
                 className="inline-flex items-center gap-2 font-label-md text-[13.5px] sm:text-label-md text-primary font-bold hover:text-primary-container transition-colors group cursor-pointer"
               >
-                <span>Learn our purification science</span>
+                <span>Discover our modern facility</span>
                 <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1.5 transition-transform">
                   arrow_forward
                 </span>

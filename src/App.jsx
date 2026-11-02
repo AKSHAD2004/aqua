@@ -6,7 +6,6 @@ import { Hero } from './components/Hero';
 import { BrandPhilosophy } from './components/BrandPhilosophy';
 import { CollectionsShowcase } from './components/CollectionsShowcase';
 import { BottlingFacility } from './components/BottlingFacility';
-import { PurificationProcess } from './components/PurificationProcess';
 import { Certifications } from './components/Certifications';
 import { InquirySection } from './components/InquirySection';
 import { Footer } from './components/Footer';
@@ -126,7 +125,7 @@ export function App() {
         <Hero />
 
         <BrandPhilosophy
-          onLearnPurificationClick={() => scrollTo('purification')}
+          onExploreFacility={() => scrollTo('where-to-find-us')}
         />
 
         <CollectionsShowcase
@@ -137,8 +136,6 @@ export function App() {
         <BottlingFacility
           onOpenVirtualTour={() => setVirtualTourOpen(true)}
         />
-
-        <PurificationProcess />
 
         <Certifications />
 
