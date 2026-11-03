@@ -93,7 +93,7 @@ export const CollectionsShowcase = ({ onRequestCaseOrder, onOpenSpecSheet }) => 
                 <img
                   key={activeCategory.id}
                   alt={`${activeCategory.title} - ${activeSize.title}`}
-                  className="max-h-[220px] sm:max-h-[280px] md:max-h-[340px] w-auto max-w-full object-contain rounded-2xl shadow-xl transition-all duration-500 hover:scale-[1.03] bg-white/40 backdrop-blur-sm border border-white/60 p-1"
+                  className="max-h-[260px] sm:max-h-[320px] md:max-h-[380px] w-auto max-w-full object-contain rounded-2xl shadow-2xl transition-all duration-500 hover:scale-[1.02] filter drop-shadow-[0_12px_28px_rgba(0,50,120,0.2)]"
                   src={activeCategory.image || IMAGES.bottlingFacility}
                 />
               </div>

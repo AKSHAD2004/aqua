@@ -31,7 +31,7 @@ export const Footer = ({ onSelectCollection, onScrollTo }) => {
               <img 
                 src="/logo.png" 
                 alt="Diamond AquaPure" 
-                className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-w-[280px] sm:max-w-[340px] object-contain filter drop-shadow-[0_0_4px_rgba(255,255,255,0.95)] drop-shadow-[0_8px_24px_rgba(56,189,248,0.5)] transition-transform duration-300 hover:scale-105" 
+                className="h-14 sm:h-16 md:h-20 w-auto max-w-[240px] sm:max-w-[280px] object-contain filter drop-shadow-[0_0_4px_rgba(255,255,255,0.9)] drop-shadow-[0_8px_24px_rgba(56,189,248,0.5)] transition-transform duration-300 hover:scale-105" 
               />
             </div>
 

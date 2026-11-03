@@ -87,7 +87,7 @@ export function App() {
     const el = document.getElementById(id);
     if (el) {
       if (window.__lenis) {
-        window.__lenis.scrollTo(el, { offset: -88, duration: 1.15 });
+        window.__lenis.scrollTo(el, { offset: -76, duration: 1.15 });
       } else {
         el.scrollIntoView({ behavior: 'smooth' });
       }
@@ -120,7 +120,7 @@ export function App() {
       <Header />
 
       {/* Main Content Sections with translucent glass aesthetics */}
-      <main className="w-full pt-20 md:pt-24 flex-grow relative z-10">
+      <main className="w-full pt-[72px] md:pt-20 flex-grow relative z-10">
         <Hero />
 
         <BrandPhilosophy

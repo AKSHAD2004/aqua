@@ -17,7 +17,7 @@ export const Header = () => {
     const element = document.getElementById(id);
     if (element) {
       if (window.__lenis) {
-        window.__lenis.scrollTo(element, { offset: -88, duration: 1.15 });
+        window.__lenis.scrollTo(element, { offset: -74, duration: 1.15 });
       } else {
         element.scrollIntoView({ behavior: 'smooth' });
       }
@@ -33,15 +33,15 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-      {/* Crisp White, Spacious Luxury Navbar */}
+      {/* Crisp White, Refined Luxury Navbar */}
       <div className={`transition-all duration-300 ${
         scrolled 
-          ? 'h-16 md:h-20 bg-white/98 backdrop-blur-xl shadow-[0_4px_25px_rgba(0,0,0,0.08)] border-b border-slate-200/80' 
-          : 'h-20 md:h-24 bg-white/95 backdrop-blur-xl shadow-[0_2px_15px_rgba(0,0,0,0.05)] border-b border-slate-200/60'
-      } px-3 sm:px-6 lg:px-12`}>
+          ? 'h-16 md:h-[72px] bg-white/98 backdrop-blur-xl shadow-[0_4px_25px_rgba(0,0,0,0.07)] border-b border-slate-200/80' 
+          : 'h-[72px] md:h-20 bg-white/95 backdrop-blur-xl shadow-[0_2px_15px_rgba(0,0,0,0.04)] border-b border-slate-200/60'
+      } px-4 sm:px-6 lg:px-12`}>
         <div className="w-full max-w-[1360px] mx-auto h-full flex items-center justify-between gap-3 sm:gap-4">
           
-          {/* Brand Logo Section with Official Diamond AquaPure Logo */}
+          {/* Dual Brand Logo Section: Aquasource in front + Diamond AquaPure beside */}
           <div className="flex items-center">
             <a 
               href="#" 
@@ -53,27 +53,45 @@ export const Header = () => {
                   window.scrollTo({ top: 0, behavior: 'smooth' }); 
                 } 
               }} 
-              className="flex items-center gap-2 group py-1"
+              className="flex items-center gap-1.5 sm:gap-2.5 md:gap-3 group py-1"
+              aria-label="Aquasource Beverages & Diamond AquaPure"
             >
+              {/* Front Logo: Aquasource Beverages */}
               <img 
-                src="/logo.png" 
+                src="/aquasource-logo.png" 
+                alt="Aquasource Beverages" 
+                className={`${
+                  scrolled 
+                    ? 'h-7 sm:h-8 md:h-9 lg:h-10' 
+                    : 'h-8 sm:h-9 md:h-11 lg:h-12'
+                } w-auto object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.05)]`} 
+              />
+
+              {/* Elegant Vertical Divider */}
+              <span className={`${
+                scrolled ? 'h-4 sm:h-5 md:h-6' : 'h-5 sm:h-6 md:h-7'
+              } w-[1px] bg-slate-300/80 transition-all duration-300 flex-shrink-0`} />
+
+              {/* Beside Logo: Diamond AquaPure */}
+              <img 
+                src="/diamond-aquapure-logo.png" 
                 alt="Diamond AquaPure" 
                 className={`${
                   scrolled 
-                    ? 'h-11 sm:h-13 md:h-15 lg:h-16' 
-                    : 'h-13 sm:h-15 md:h-18 lg:h-20'
-                } w-auto object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.06)]`} 
+                    ? 'h-6 sm:h-7 md:h-8 lg:h-9' 
+                    : 'h-7 sm:h-8 md:h-10 lg:h-11'
+                } w-auto object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.05)]`} 
               />
             </a>
           </div>
 
-          {/* Desktop Navigation Links - Black Text with Subtle Hover Pill */}
+          {/* Desktop Navigation Links - Sunrich Aqua Clean Styling */}
           <nav className="hidden lg:flex items-center gap-1.5 md:gap-2">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollTo(item.id)}
-                className="px-4 py-2 rounded-full text-slate-800 hover:text-[#0056b3] hover:bg-sky-50/80 active:bg-sky-100 text-[14px] md:text-[14.5px] font-semibold tracking-[-0.01em] transition-all font-outfit cursor-pointer flex items-center gap-1.5 group"
+                className="px-4 py-2 rounded-full text-slate-700 hover:text-[#0056b3] hover:bg-sky-50/80 active:bg-sky-100 text-[13.5px] font-medium tracking-[0.03em] transition-all cursor-pointer flex items-center gap-1.5 group"
               >
                 <span>
                   {item.label}
@@ -86,10 +104,10 @@ export const Header = () => {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 text-black flex items-center justify-center transition-colors border border-slate-200 cursor-pointer"
+              className="w-10 h-10 rounded-xl bg-slate-50 hover:bg-slate-100 active:bg-slate-200 text-slate-800 flex items-center justify-center transition-all border border-slate-200/80 focus:outline-none focus:ring-2 focus:ring-[#0056b3]/25 cursor-pointer shadow-sm"
               aria-label="Toggle navigation menu"
             >
-              <span className="material-symbols-outlined text-[22px]">
+              <span className="material-symbols-outlined text-[24px]">
                 {mobileMenuOpen ? 'close' : 'menu'}
               </span>
             </button>
@@ -102,6 +120,13 @@ export const Header = () => {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white/98 backdrop-blur-2xl border-b border-slate-200 shadow-[0_20px_50px_rgba(0,0,0,0.12)] px-4 py-3 sm:py-4 max-h-[calc(100vh-3.5rem)] overflow-y-auto animate-fadeIn text-slate-900">
           <div className="flex flex-col gap-2">
+            {/* Mobile Drawer Dual Brand Header */}
+            <div className="flex items-center gap-2 pb-2.5 mb-1 border-b border-slate-100 px-1">
+              <img src="/aquasource-logo.png" alt="Aquasource" className="h-7 w-auto object-contain" />
+              <span className="h-4 w-px bg-slate-300/80" />
+              <img src="/diamond-aquapure-logo.png" alt="Diamond AquaPure" className="h-6 w-auto object-contain" />
+            </div>
+
             {navItems.map((item) => (
               <button
                 key={item.id}
