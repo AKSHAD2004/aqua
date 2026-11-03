@@ -17,7 +17,7 @@ export const Header = () => {
     const element = document.getElementById(id);
     if (element) {
       if (window.__lenis) {
-        window.__lenis.scrollTo(element, { offset: -64, duration: 1.15 });
+        window.__lenis.scrollTo(element, { offset: -88, duration: 1.15 });
       } else {
         element.scrollIntoView({ behavior: 'smooth' });
       }
@@ -33,11 +33,11 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-      {/* Crisp White, Compact Navbar Bar */}
-      <div className={`h-14 md:h-16 transition-all duration-300 ${
+      {/* Crisp White, Spacious Luxury Navbar */}
+      <div className={`transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/95 backdrop-blur-xl shadow-[0_4px_25px_rgba(0,0,0,0.08)] border-b border-slate-200/80 py-1' 
-          : 'bg-white/90 backdrop-blur-xl shadow-[0_2px_15px_rgba(0,0,0,0.05)] border-b border-slate-200/60'
+          ? 'h-16 md:h-20 bg-white/98 backdrop-blur-xl shadow-[0_4px_25px_rgba(0,0,0,0.08)] border-b border-slate-200/80' 
+          : 'h-20 md:h-24 bg-white/95 backdrop-blur-xl shadow-[0_2px_15px_rgba(0,0,0,0.05)] border-b border-slate-200/60'
       } px-3 sm:px-6 lg:px-12`}>
         <div className="w-full max-w-[1360px] mx-auto h-full flex items-center justify-between gap-3 sm:gap-4">
           
@@ -53,12 +53,16 @@ export const Header = () => {
                   window.scrollTo({ top: 0, behavior: 'smooth' }); 
                 } 
               }} 
-              className="flex items-center gap-2 group py-0.5"
+              className="flex items-center gap-2 group py-1"
             >
               <img 
                 src="/logo.png" 
                 alt="Diamond AquaPure" 
-                className="h-8 sm:h-9 md:h-11 w-auto max-w-[130px] sm:max-w-[160px] md:max-w-none object-contain transition-transform duration-300 group-hover:scale-105" 
+                className={`${
+                  scrolled 
+                    ? 'h-11 sm:h-13 md:h-15 lg:h-16' 
+                    : 'h-13 sm:h-15 md:h-18 lg:h-20'
+                } w-auto object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.06)]`} 
               />
             </a>
           </div>
@@ -69,7 +73,7 @@ export const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollTo(item.id)}
-                className="px-3.5 py-1.5 rounded-full text-slate-800 hover:text-[#0056b3] hover:bg-sky-50/80 active:bg-sky-100 text-[13.5px] md:text-[14px] font-semibold tracking-wide transition-all font-outfit cursor-pointer flex items-center gap-1 group"
+                className="px-4 py-2 rounded-full text-slate-800 hover:text-[#0056b3] hover:bg-sky-50/80 active:bg-sky-100 text-[14px] md:text-[14.5px] font-semibold tracking-[-0.01em] transition-all font-outfit cursor-pointer flex items-center gap-1.5 group"
               >
                 <span>
                   {item.label}
