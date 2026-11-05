@@ -47,7 +47,7 @@ export const Footer = ({ onSelectCollection, onScrollTo }) => {
               <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
                 {/* Facebook */}
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/share/19tyDyBziu/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-[0_4px_14px_rgba(24,119,242,0.4)] hover:scale-110 hover:shadow-[0_6px_20px_rgba(24,119,242,0.6)] transition-all cursor-pointer"
@@ -60,7 +60,7 @@ export const Footer = ({ onSelectCollection, onScrollTo }) => {
 
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/aquasource_beverages?vrfl=eW1qOWV5Z3plMmJk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center shadow-[0_4px_14px_rgba(220,39,67,0.4)] hover:scale-110 hover:shadow-[0_6px_20px_rgba(220,39,67,0.6)] transition-all cursor-pointer"
@@ -132,7 +132,7 @@ export const Footer = ({ onSelectCollection, onScrollTo }) => {
           </div>
 
           {/* Company & Hygiene Column */}
-          <div className="lg:col-span-3 flex flex-col gap-2.5 sm:gap-space-sm">
+          <div className="lg:col-span-2 flex flex-col gap-2.5 sm:gap-space-sm">
             <span className="text-[13px] sm:text-label-md text-[#38bdf8] font-bold uppercase tracking-wider font-outfit">
               Company &amp; Hygiene
             </span>
@@ -176,51 +176,102 @@ export const Footer = ({ onSelectCollection, onScrollTo }) => {
           </div>
 
           {/* Plant & Distribution Column */}
-          <div className="lg:col-span-3 flex flex-col gap-2.5 sm:gap-space-sm">
+          <div className="lg:col-span-4 flex flex-col gap-2.5 sm:gap-space-sm">
             <span className="text-[13px] sm:text-label-md text-[#38bdf8] font-bold uppercase tracking-wider font-outfit">
               Plant &amp; Distribution
             </span>
 
             {/* Plant & Office Address Card in Glassmorphism */}
-            <div className="flex items-start gap-2.5 p-3 sm:p-3.5 rounded-xl sm:rounded-2xl bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/15 shadow-[0_4px_20px_rgba(0,0,0,0.25)] text-slate-200 transition-all">
+            <div className="flex items-start gap-2.5 p-3 rounded-xl bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/15 shadow-[0_4px_20px_rgba(0,0,0,0.25)] text-slate-200 transition-all">
               <span className="material-symbols-outlined text-[18px] sm:text-[20px] text-[#38bdf8] flex-shrink-0 mt-0.5">location_on</span>
               <div className="text-[12px] sm:text-[12.5px] leading-relaxed">
                 <span className="font-bold text-white block text-[12.5px] sm:text-[13px] mb-0.5 font-outfit">Factory &amp; Registered Address:</span>
                 <p className="text-slate-300">
-                  Gt no: 1954/9, Bhokre Coloney,<br />
-                  Subhashnager, Atpost: Malgaon,<br />
-                  Tal: Miraj, Dist: Sangli.<br />
-                  Pin: 416407
+                  Gt no: 1954/9, Bhokre coloney, Subhashnager,<br />
+                  At post: Malgaon, Tal: Miraj,<br />
+                  Dist: Sangli, Pin: 416407
                 </p>
               </div>
             </div>
 
-            {/* Contact Phone Numbers */}
-            <div className="flex flex-col gap-1 sm:gap-1.5 pt-1 text-[12.5px] sm:text-body-sm">
+            {/* Contact & Key Personnel Numbers */}
+            <div className="flex flex-col gap-2 pt-1">
               <span className="font-bold text-white text-[12.5px] sm:text-[13px] flex items-center gap-1.5 font-outfit">
                 <span className="material-symbols-outlined text-[16px] sm:text-[17px] text-[#38bdf8]">call</span>
-                <span>Phone Numbers:</span>
+                <span>Contact &amp; Key Personnel:</span>
               </span>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1 text-[12px] sm:text-[13px] pl-4 sm:pl-5 text-slate-300">
-                <a href="tel:+919975928716" className="hover:text-[#38bdf8] transition-colors flex items-center gap-1 group">
-                  <span className="text-[#38bdf8] group-hover:translate-x-0.5 transition-transform">›</span>
-                  <span>+91 99759 28716</span>
+
+              {/* Highlighted Card for Orders */}
+              <a 
+                href="tel:+919970801453" 
+                className="p-2.5 rounded-xl bg-gradient-to-r from-sky-500/20 via-blue-600/20 to-sky-600/20 hover:from-sky-500/30 hover:to-blue-600/30 border border-[#38bdf8]/40 shadow-sm transition-all block group"
+              >
+                <div className="flex items-center justify-between text-[11px] mb-1">
+                  <span className="text-[#38bdf8] font-bold uppercase tracking-wider">
+                    For Orders
+                  </span>
+                  <span className="text-[10px] text-slate-300 bg-white/15 px-2 py-0.5 rounded font-medium">
+                    Company Number
+                  </span>
+                </div>
+                <div className="text-[14px] sm:text-[15px] font-bold text-white tracking-wide whitespace-nowrap flex items-center gap-1.5 group-hover:text-[#38bdf8] transition-colors">
+                  <span className="text-[#38bdf8] font-mono text-[13px]">›</span>
+                  <span>+91 99708 01453</span>
+                </div>
+              </a>
+
+              {/* Personnel List Table / Clean Rows */}
+              <div className="flex flex-col gap-1 text-[12px] sm:text-[12.5px] bg-white/5 p-2 rounded-xl border border-white/10">
+                {/* Managing Director */}
+                <a 
+                  href="tel:+919766818623" 
+                  className="flex items-center justify-between gap-2 px-2 py-1 rounded hover:bg-white/10 transition-colors group"
+                >
+                  <span className="text-slate-300 group-hover:text-white transition-colors truncate">
+                    Managing Director
+                  </span>
+                  <span className="text-white font-medium whitespace-nowrap group-hover:text-[#38bdf8] transition-colors text-[12.5px]">
+                    +91 97668 18623
+                  </span>
                 </a>
-                <a href="tel:+919766818623" className="hover:text-[#38bdf8] transition-colors flex items-center gap-1 group">
-                  <span className="text-[#38bdf8] group-hover:translate-x-0.5 transition-transform">›</span>
-                  <span>+91 97668 18623</span>
+
+                {/* Quality Supervisor and Lab Technician */}
+                <a 
+                  href="tel:+918600710179" 
+                  className="flex items-center justify-between gap-2 px-2 py-1 rounded hover:bg-white/10 transition-colors group border-t border-white/5"
+                >
+                  <span className="text-slate-300 group-hover:text-white transition-colors truncate">
+                    Quality Supervisor &amp; Lab Tech
+                  </span>
+                  <span className="text-white font-medium whitespace-nowrap group-hover:text-[#38bdf8] transition-colors text-[12.5px]">
+                    +91 86007 10179
+                  </span>
                 </a>
-                <a href="tel:+918600710179" className="hover:text-[#38bdf8] transition-colors flex items-center gap-1 group">
-                  <span className="text-[#38bdf8] group-hover:translate-x-0.5 transition-transform">›</span>
-                  <span>+91 86007 10179</span>
+
+                {/* Company Supervisor */}
+                <a 
+                  href="tel:+917743949512" 
+                  className="flex items-center justify-between gap-2 px-2 py-1 rounded hover:bg-white/10 transition-colors group border-t border-white/5"
+                >
+                  <span className="text-slate-300 group-hover:text-white transition-colors truncate">
+                    Company Supervisor
+                  </span>
+                  <span className="text-white font-medium whitespace-nowrap group-hover:text-[#38bdf8] transition-colors text-[12.5px]">
+                    +91 77439 49512
+                  </span>
                 </a>
-                <a href="tel:+917743949512" className="hover:text-[#38bdf8] transition-colors flex items-center gap-1 group">
-                  <span className="text-[#38bdf8] group-hover:translate-x-0.5 transition-transform">›</span>
-                  <span>+91 77439 49512</span>
-                </a>
-                <a href="tel:+919970801452" className="hover:text-[#38bdf8] transition-colors flex items-center gap-1 group">
-                  <span className="text-[#38bdf8] group-hover:translate-x-0.5 transition-transform">›</span>
-                  <span>+91 99708 01452</span>
+
+                {/* Director */}
+                <a 
+                  href="tel:+919975928716" 
+                  className="flex items-center justify-between gap-2 px-2 py-1 rounded hover:bg-white/10 transition-colors group border-t border-white/5"
+                >
+                  <span className="text-slate-300 group-hover:text-white transition-colors truncate">
+                    Director
+                  </span>
+                  <span className="text-white font-medium whitespace-nowrap group-hover:text-[#38bdf8] transition-colors text-[12.5px]">
+                    +91 99759 28716
+                  </span>
                 </a>
               </div>
             </div>
@@ -229,10 +280,10 @@ export const Footer = ({ onSelectCollection, onScrollTo }) => {
             <div className="pt-0.5">
               <a 
                 href="mailto:info.diamondaquapure@gmail.com" 
-                className="flex items-center gap-1.5 sm:gap-2 hover:text-[#38bdf8] transition-colors text-[12px] sm:text-[13px] text-slate-300 group"
+                className="flex items-center gap-2 hover:text-[#38bdf8] transition-colors text-[12px] sm:text-[12.5px] text-slate-300 group bg-white/5 hover:bg-white/10 px-2.5 py-1.5 rounded-lg border border-white/10"
               >
-                <span className="material-symbols-outlined text-[16px] sm:text-[17px] text-[#38bdf8]">mail</span>
-                <span className="font-medium break-all group-hover:text-white transition-colors">info.diamondaquapure@gmail.com</span>
+                <span className="material-symbols-outlined text-[16px] text-[#38bdf8]">mail</span>
+                <span className="font-medium truncate group-hover:text-white transition-colors">info.diamondaquapure@gmail.com</span>
               </a>
             </div>
           </div>
